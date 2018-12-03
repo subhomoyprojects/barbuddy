@@ -1,0 +1,73 @@
+
+.tagsly {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  color:#757575;
+  border-bottom: 1px solid #e5e5e5;
+  display: block;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  margin: 20px 0;
+}
+
+.tagsly span.tag {
+  display: inline-block;
+  position: relative;
+  padding: 7px 30px 7px 12px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  background-color: #fff;
+  color: #8f2de2;
+  box-shadow: 5px 0px 21px rgba(157,157,157,0.29);
+}
+
+.tagsly span.tag a {
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #fb655a;
+  line-height: 24px;
+  padding: 0 4px;
+}
+
+.tagsly input[type=text].tag-textbox {
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 7px 5px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.tagsly input[type=text].tag-textbox:disabled { display: none; }
+
+.tagsly ul.suggest {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 99;
+  width: 100%;
+  background-color: #f4f4f4;
+  left: 0 !important;
+}
+
+.tagsly ul.suggest li {
+  padding: 5px;
+  color: #686868;
+  cursor: pointer;
+}
+
+.tagsly ul.suggest li.active,
+.tagsly ul.suggest li:hover { background: #cecece; }

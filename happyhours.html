@@ -1,0 +1,581 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicon.png">
+<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
+
+<title>Bar Buddy</title>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css" />
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+<header class="header_wrapper">
+    <div class="logo_container">
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 offset-lg-2 offset-xl-2 logo">
+            <a href="registration.html"><img src="images/logo_white.png" alt="Logo"></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="flow_line_wrapper">
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+            <ul class="flow_line_pointer_wrapper">
+                <li class="active">
+                <a href="subscription.html"><span>1</span><strong>Subscription Plan</strong></a>
+                </li>
+                <li class="active">
+                <a href="basicdetails.html"><span>2</span><strong>Basic Details</strong></a>
+                </li>
+                <li class="active">
+                <a href="adddrinks.html"><span>3</span><strong>Add Drinks & Foods</strong></a>
+                </li>
+                <li class="active">
+                <a href="#"><span>4</span><strong>Add Special Offers</strong></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</header>
+
+<main class="main_wrapper">
+    <section class="happyhours_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 offset-md-1 offset-lg-2 offset-xl-3 heading_tag">
+                    <h1>Happy Hours</h1>
+                    <div class="happy_hours_form_holder">
+                    <form method="POST" class="relative">
+                        <h2>Add some exciting offers</h2>
+                        <ul class="margin_top_40 form_holder">
+                        <li><input type="text" placeholder="Offer Title*" required></li>
+                        <li><textarea  placeholder="Short Description"></textarea></li>
+                        <li class="no_border custom_check_and_radio">
+                            <label class="width_half margin_right_30">Offer available on</label>
+                            <span class="check_and_radio_holder"><input type="radio" name="speciality_drinks" id="drinks"><label for="drinks">Drinks</label></span>
+                            <span class="check_and_radio_holder"><input type="radio" name="speciality_drinks" id="drinks_type"><label for="drinks_type">Drink Type</label></span>
+                            <div class="common_drinks_holder choose_drinks_holder">
+                                <div class="form-group">
+                                    <select class="multiselect" id="drink_type" multiple name="" tabindex="-1">
+                                        <option value="Vat 69" class="drinks-drinks-type">Vat 69</option>
+                                        <option value="Royal Stag" class="drinks-drinks-type">Royal Stag</option>
+                                        <option value="King Fisher" class="drinks-drinks-type">King Fisher</option>
+                                        <option value="Black Dog" class="drinks-drinks-type">Black Dog</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="choose_drinks_type_holder multy-controller-for-drink-type">
+                                <div class="row" id="accordion-drink-type">
+                                    <div class="col-12 mb-3">
+                                        <div class="card main-category-drink-type"> <!-- Repet Card Start -->
+                                            <div class="card-header" id="headingOne">
+                                                <button type="button" data-toggle="collapse" data-target="#drinktype_1" aria-expanded="false" aria-controls="drinktype_1" class="drop_icon">
+                                                    Beer
+                                                </button>
+                                            </div>
+                                        
+                                            <div id="drinktype_1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-drink-type">
+                                                <div class="card-body">
+                                                
+                                                <!-- Sub Category Accordine Start -->
+
+                                                <div id="sub_catagory_1">
+                                                    <div class="card mb-2 sub-category-drink-type">
+                                                        <div class="card-header" id="headingOne">
+                                                            <div class="button-design-type-box">
+                                                                <input type="checkbox" id="beer_drink_type_select1"><label for="beer_drink_type_select1">Domestic</label>
+                                                            </div>	
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2 sub-category-drink-type">
+                                                        <div class="card-header" id="headingOne">
+                                                            <div class="button-design-type-box">
+                                                                <input type="checkbox" id="beer_drink_type_select2"><label for="beer_drink_type_select2">Imports</label>
+                                                            </div>	
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2 sub-category-drink-type">
+                                                        <div class="card-header" id="headingOne">
+                                                            <div class="button-design-type-box">
+                                                                <input type="checkbox" id="beer_drink_type_select3"><label for="beer_drink_type_select3">cider</label>
+                                                            </div>	
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2 sub-category-drink-type">
+                                                        <div class="card-header" id="headingOne">
+                                                            <div class="button-design-type-box">
+                                                                <input type="checkbox" id="beer_drink_type_select4"><label for="beer_drink_type_select4">Craft Beer</label>
+                                                            </div>	
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Sub Category Accordine End -->
+
+                                                </div>
+                                            </div>
+                                        </div><!-- Repet Card End -->
+                                        <div class="card main-category-drink-type"> <!-- Repet Card Start -->
+                                            <div class="card-header" id="headingOne">
+                                                <button type="button" data-toggle="collapse" data-target="#drinktype_2" aria-expanded="false" aria-controls="drinktype_2" class="drop_icon">
+                                                  Liquor
+                                                </button>
+                                            </div>
+                                        
+                                            <div id="drinktype_2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-drink-type">
+                                              <div class="card-body">
+                                                
+                                                <!-- Sub Category Accordine Start -->
+
+                                                <div id="sub_catagory_1">
+                                                    <div class="card mb-2 sub-category-drink-type">
+                                                        <div class="card-header" id="headingOne">
+                                                            <div class="button-design-type-box">
+                                                                <input type="checkbox" id="liquor_drink_type_select1"><label for="liquor_drink_type_select1">Well Drinks</label>
+                                                            </div>	
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2 sub-category-drink-type">
+                                                        <div class="card-header" id="headingOne">
+                                                            <div class="button-design-type-box">
+                                                                <input type="checkbox" id="liquor_drink_type_select2"><label for="liquor_drink_type_select2">Cocktail</label>
+                                                            </div>	
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2 sub-category-drink-type">
+                                                        <div class="card-header" id="headingOne">
+                                                            <div class="button-design-type-box">
+                                                                <input type="checkbox" id="liquor_drink_type_select3"><label for="liquor_drink_type_select3">House Specialities</label>
+                                                            </div>	
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2 sub-category-drink-type">
+                                                        <div class="card-header releative" id="headingOne">
+                                                            <div class="button-design-type-box">
+                                                                <input type="checkbox" id="liquor_drink_type_select4"><label for="liquor_drink_type_select4">Top Shelf</label>
+                                                            </div>
+                                                            <button type="button" class="drop_icon abosolute-cntroller-type"  data-toggle="collapse" data-target="#drinksubmenu1" aria-expanded="false" aria-controls="drinksubmenu1">
+                                                            </button>
+                                                        </div>
+                                                    
+                                                        <div id="drinksubmenu1" class="collapse" aria-labelledby="headingOne" data-parent="#sub_catagory_1">
+                                                        <div class="card-body">
+                                                           <div class="row">
+                                                               <div class="col-12">
+                                                                    <ul class="all_check_sublink">
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select5"><label for="liquor_drink_type_select5">Gin</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select6"><label for="liquor_drink_type_select6">Bourbon</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select7"><label for="liquor_drink_type_select7">Rum</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select8"><label for="liquor_drink_type_select8">Tequila</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select9"><label for="liquor_drink_type_select9">Vodka</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select10"><label for="liquor_drink_type_select10">Vermouth</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select11"><label for="liquor_drink_type_select11">Whisky</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select12"><label for="liquor_drink_type_select12">Scotch</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select13"><label for="liquor_drink_type_select13">Wine</label></li>
+                                                                    </ul>
+                                                               </div>
+                                                               <div class="col-12"></div>
+                                                           </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2 sub-category-drink-type">
+                                                        <div class="card-header relative" id="headingOne">
+                                                                <div class="button-design-type-box">
+                                                                    <input type="checkbox" id="liquor_drink_type_select14"><label for="liquor_drink_type_select14">Call Drinks</label>
+                                                                </div>
+                                                            <button type="button" class="drop_icon abosolute-cntroller-type"  data-toggle="collapse" data-target="#drinksubmenu2" aria-expanded="false" aria-controls="drinksubmenu2"></button>
+                                                        </div>
+                                                    
+                                                        <div id="drinksubmenu2" class="collapse" aria-labelledby="headingOne" data-parent="#sub_catagory_1">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <ul class="all_check_sublink">
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select15"><label for="liquor_drink_type_select15">Tequila</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select16"><label for="liquor_drink_type_select16">Vodka</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select17"><label for="liquor_drink_type_select17">Canadian Whiskey</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select18"><label for="liquor_drink_type_select18">Rum</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select19"><label for="liquor_drink_type_select19">Gin</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select20"><label for="liquor_drink_type_select20">Brandy</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select21"><label for="liquor_drink_type_select21">Cognac</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select22"><label for="liquor_drink_type_select22">American Blend Whiskey</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select23"><label for="liquor_drink_type_select23">Irish Whiskey</label></li>
+                                                                        <li class="no_border mb-1"><input type="checkbox" id="liquor_drink_type_select24"><label for="liquor_drink_type_select24">Bourbon</label></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-12"></div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Sub Category Accordine End -->
+
+                                              </div>
+                                            </div>
+                                        </div><!-- Repet Card End -->
+                                    </div>
+                                    <div class="col-6"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="no_border custom_check_and_radio">
+                            <label class="width_half margin_right_30">Flat Price*</label>
+                            <div class="price-input-offers-holder">
+                                <div class="dropdown underline-decoration">
+                                    <button class="dropdown-toggle" type="button" id="flat_cost_toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Enter the Flat Prices
+                                    </button>
+                                    <div class="dropdown-menu p-4" aria-labelledby="flat_cost_toggle">
+                                        <ul class="price-holder-of-offers">
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <label>Cabernet Sauvignon :</label>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <input type="text" placeholder="Price">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <label>Royal Stag :</label>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <input type="text" placeholder="Price">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <label>King Fisher :</label>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <input type="text" placeholder="Price">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <span class="check_and_radio_holder"><input type="radio" name="discount_strategy" id="flat_cost"><label for="flat_cost" data-toggle="modal" data-target="#flatCost">Flat Cost</label></span>
+                            <span class="check_and_radio_holder"><input type="radio" name="discount_strategy" id="percentage_discount"><label for="percentage_discount" data-toggle="modal" data-target="#discountCost">% Discounts</label></span>
+                            <span class="check_and_radio_holder"><input type="radio" name="discount_strategy" id="starting_at"><label for="starting_at" data-toggle="modal" data-target="#startingAt">Starting At</label></span> -->
+                        </li>
+                        <li class="no_border">
+                            <label class="width_100">Offer Valid Date*</label>
+                            <div class="half calender_icon margin_right_30">
+                            <input placeholder="From" type="text" required placeholder="Form">
+                            </div>
+                            <div class="half calender_icon">
+                            <input placeholder="To" type="text" required placeholder="To">
+                            </div>
+                        </li>
+                        <li class="no_border">
+                            <label class="width_100">Offer Valid Days*</label>
+                            <div class="day_active_inactive">
+                                <label><input type="checkbox">Sun</label>
+                                <label><input type="checkbox">Mon</label>
+                                <label><input type="checkbox">Tue</label>
+                                <label><input type="checkbox">Wed</label>
+                                <label><input type="checkbox">Thu</label>
+                                <label><input type="checkbox">Fri</label>
+                                <label><input type="checkbox">Sat</label>
+                            </div>
+                        </li>
+                        <li class="no_border">
+                            <label class="width_100">Offer Valid Time*</label>
+                            <div class="half watch_icon margin_right_30">
+                                <input placeholder="From" type="text" required placeholder="Form">
+                            </div>
+                            <div class="half watch_icon">
+                                <input placeholder="To" type="text" required placeholder="To">
+                            </div>
+                            </li>
+                            <li class="no_border">
+                            <label class="width_100">Offer NOT Valid on Dates*</label>
+                            <ul class="offer_not_valid_holder">
+                                <li>
+                                <div class="calender_icon">
+                                    <input placeholder="From" type="text" required placeholder="Form">
+                                </div>
+                                </li>
+                                <!-- Repet Li -->
+                                <!-- <li>
+                                <div class="calender_icon">
+                                    <input placeholder="From" type="text" required placeholder="Form">
+                                </div>
+                                </li> -->
+                                <!-- Repet Li -->
+                            </ul>
+                            </li>
+                            <li class="no_border text-right">
+                            <button type="button" class="add-another-date">Add Another Date</button>
+                            </li>
+                        </ul>
+                        <div class="file_type_controller">
+                        <input id="uploadFile" style="display: none;" type="file">
+                        <button type="button" class="upload_file" onclick="document.getElementById('uploadFile').click();"><span class="plus_icon"></span><span>Upload Offer Images</span></button>
+                        </div>
+                        <div class="img_and_video_slider_controller">
+                            <div class="large-12 img_and_video_thumbnel_holder border-bottom-none">
+                                <div class="owl-carousel owl-theme owl2">
+                                    <div class="item">
+                                        <div class="thumbnel_holder">
+                                            <img src="images/thumbnel_1.jpg" alt="Thumbnel">
+                                            <button type="button" class="close_btn"></button>
+                                        </div>
+                                    </div>
+                                     <div class="item">
+                                        <div class="thumbnel_holder">
+                                            <img src="images/thumbnel_2.jpg" alt="Thumbnel">
+                                            <button type="button" class="close_btn"></button>
+                                        </div>
+                                    </div>
+                                   <div class="item">
+                                        <div class="thumbnel_holder">
+                                            <img src="images/thumbnel_3.jpg" alt="Thumbnel">
+                                            <button type="button" class="close_btn"></button>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="thumbnel_holder">
+                                            <img src="images/thumbnel_3.jpg" alt="Thumbnel">
+                                            <button type="button" class="close_btn"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="form_holder terms-and-condition-point-holder mCustomScrollbar">
+                            <li class="no_border mb-0"><label>Discount T&C</label></li>
+                            <li class="no_border">
+                                <span class="social_dropdown_and_sociallinks">
+                                    <input type="text" placeholder="Enter your offer terms and Conditions." class="placeholder-opacity-half">
+                                </span>
+                                <button class="minus_icon add_more" type="button"></button>
+                            </li>
+                            <li class="no_border">
+                                <span class="social_dropdown_and_sociallinks">
+                                    <input type="text" placeholder="Enter your offer terms and Conditions." class="placeholder-opacity-half">
+                                    <small>Click on plus icon  to add more points.</small>
+                                </span>
+                                <button class="plus_icon add_more" type="button"></button>
+                            </li>
+                            <li class="no_border">
+                                <span class="social_dropdown_and_sociallinks">
+                                    <input type="text" placeholder="Enter your offer terms and Conditions." class="placeholder-opacity-half">
+                                    <small>Click on plus icon  to add more points.</small>
+                                </span>
+                                <button class="plus_icon add_more" type="button"></button>
+                            </li>
+                            <li class="no_border">
+                                <span class="social_dropdown_and_sociallinks">
+                                    <input type="text" placeholder="Enter your offer terms and Conditions." class="placeholder-opacity-half">
+                                    <small>Click on plus icon  to add more points.</small>
+                                </span>
+                                <button class="plus_icon add_more" type="button"></button>
+                            </li>
+                            <li class="no_border">
+                                <span class="social_dropdown_and_sociallinks">
+                                    <input type="text" placeholder="Enter your offer terms and Conditions." class="placeholder-opacity-half">
+                                    <small>Click on plus icon  to add more points.</small>
+                                </span>
+                                <button class="plus_icon add_more" type="button"></button>
+                            </li>
+                            <li class="no_border">
+                                <span class="social_dropdown_and_sociallinks">
+                                    <input type="text" placeholder="Enter your offer terms and Conditions." class="placeholder-opacity-half">
+                                    <small>Click on plus icon  to add more points.</small>
+                                </span>
+                                <button class="plus_icon add_more" type="button"></button>
+                            </li>
+                            <li class="no_border">
+                                <span class="social_dropdown_and_sociallinks">
+                                    <input type="text" placeholder="Enter your offer terms and Conditions." class="placeholder-opacity-half">
+                                    <small>Click on plus icon  to add more points.</small>
+                                </span>
+                                <button class="plus_icon add_more" type="button"></button>
+                            </li>
+                            <li class="no_border">
+                                <span class="social_dropdown_and_sociallinks">
+                                    <input type="text" placeholder="Enter your offer terms and Conditions." class="placeholder-opacity-half">
+                                    <small>Click on plus icon  to add more points.</small>
+                                </span>
+                                <button class="plus_icon add_more" type="button"></button>
+                            </li>
+                            <li class="no_border">
+                                <span class="social_dropdown_and_sociallinks">
+                                    <input type="text" placeholder="Enter your offer terms and Conditions." class="placeholder-opacity-half">
+                                    <small>Click on plus icon  to add more points.</small>
+                                </span>
+                                <button class="plus_icon add_more" type="button"></button>
+                            </li>
+                            <li class="no_border">
+                                <span class="social_dropdown_and_sociallinks">
+                                    <input type="text" placeholder="Enter your offer terms and Conditions." class="placeholder-opacity-half">
+                                    <small>Click on plus icon  to add more points.</small>
+                                </span>
+                                <button class="plus_icon add_more" type="button"></button>
+                            </li>
+                        </ul>
+                        <a href="addoffers.html" class="button_custom violet_btn">Next</a>
+                        <button type="button" class="text-uppercase skip-button">Skip</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+
+<footer class="footer_wrapper">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-12 copy_right">
+            <p>&copy; Barbuddy 2018</p>
+        </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Flat Cost Model Start -->
+
+<div class="modal fade add-category-model discount-modal" id="flatCost" tabindex="-1" role="dialog" aria-labelledby="flatCost" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="flatCost">Discount Value</h5>
+          <button type="button" class="close red-cross-btn" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row align-center box-offwhite">
+                <div class="col">
+                    <label>Cabernet Sauvignon :</label>
+                </div>
+                <div class="col">
+                    <div class="border-bottom-animation">
+                        <input type="text" placeholder="Price" class="enter-new-category">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-center box-offwhite">
+                <div class="col">
+                    <label>Royal Stag :</label>
+                </div>
+                <div class="col">
+                    <div class="border-bottom-animation">
+                        <input type="text" placeholder="Price" class="enter-new-category">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-center box-offwhite">
+                <div class="col">
+                    <label>King Fisher :</label>
+                </div>
+                <div class="col">
+                    <div class="border-bottom-animation">
+                        <input type="text" placeholder="Price" class="enter-new-category">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Flat Cost Model End -->
+
+<!-- % Discount Cost Model Start -->
+
+<div class="modal fade add-category-model" id="discountCost" tabindex="-1" role="dialog" aria-labelledby="discountCost" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="discountCost">Discount Value</h5>
+          <button type="button" class="close red-cross-btn" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-sm-12 col-md-9">
+                    <div class="border-bottom-animation">
+                        <input type="text" placeholder="Enter Your Discount" class="enter-new-category">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <button type="button" class="add-category-model-opaner media-margin-controller">+ Add</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- % Discount Cost Model End -->
+
+<!-- Starting At Model Start -->
+
+<div class="modal fade add-category-model" id="startingAt" tabindex="-1" role="dialog" aria-labelledby="startingAt" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="startingAt">Discount Value</h5>
+          <button type="button" class="close red-cross-btn" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-sm-12 col-md-9">
+                    <div class="border-bottom-animation">
+                        <input type="text" placeholder="Enter Your Price" class="enter-new-category">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <button type="button" class="add-category-model-opaner media-margin-controller">+ Add</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Starting At Model End -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/base.js"></script>
+
+
+</body>
+</html>
