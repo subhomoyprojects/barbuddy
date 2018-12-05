@@ -5154,6 +5154,9 @@ input[type="submit"]{
         margin: 9px 0;
     }
 }
+.box_required{
+    border-color: #e73e07 !important;
+}
 
 /* After Development ========================================*/
 
