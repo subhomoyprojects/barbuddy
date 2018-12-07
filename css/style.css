@@ -5157,6 +5157,10 @@ input[type="submit"]{
 .box_required{
     border-color: #e73e07 !important;
 }
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
 
 /* After Development ========================================*/
 
