@@ -1215,7 +1215,7 @@
 .tringle_arrow{
     position: relative;
 }
-.tringle_arrow::before {
+/* .tringle_arrow::before {
     position: absolute;
     content: "\f107";
     font-family: 'FontAwesome';
@@ -1224,7 +1224,7 @@
     top: 8px;
     right: 8px;
     pointer-events: none;
-}
+} */
 .social_icon_btn .fa{
     margin-right:5px;
 }
@@ -2700,7 +2700,7 @@
 .tringle_arrow{
     position: relative;
 }
-.tringle_arrow::before {
+/* .tringle_arrow::before {
     position: absolute;
     content: "\f107";
     font-family: 'FontAwesome';
@@ -2709,7 +2709,7 @@
     top: 8px;
     right: 8px;
     pointer-events: none;
-}
+} */
 .social_icon_btn .fa{
     margin-right:5px;
 }
