@@ -67,7 +67,7 @@
     margin-top:15px;
     margin-bottom: 0;
 }
-.signup_form_controller li input{
+.signup_form_controller li input:not([type="checkbox"]){
     border-radius: 6px;
     padding: 8px 15px;
     font-size: 15px;
@@ -5172,6 +5172,23 @@ input[type="submit"]{
         right: 32px !important;
         left: auto !important;
     }
+}
+.custom_check_and_radio.terms-policy-holder input[type="checkbox"]:checked + label::before, 
+.custom_check_and_radio.terms-policy-holder input[type="checkbox"]:not(:checked) + label::before{
+    border: none;
+}
+.custom_check_and_radio.terms-policy-holder input[type="radio"]:checked + label, 
+.custom_check_and_radio.terms-policy-holder input[type="radio"]:not(:checked) + label, 
+.custom_check_and_radio.terms-policy-holder input[type="checkbox"]:checked + label, 
+.custom_check_and_radio.terms-policy-holder input[type="checkbox"]:not(:checked) + label{
+    color: #fff;
+}
+.custom_check_and_radio.terms-policy-holder input[type="radio"]:checked + label a, 
+.custom_check_and_radio.terms-policy-holder input[type="radio"]:not(:checked) + label a, 
+.custom_check_and_radio.terms-policy-holder input[type="checkbox"]:checked + label a, 
+.custom_check_and_radio.terms-policy-holder input[type="checkbox"]:not(:checked) + label a{
+    color: #4ee26a;
+    text-decoration: underline;
 }
 
 
