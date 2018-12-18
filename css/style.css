@@ -65,6 +65,7 @@
 }
 .signup_form_controller li:last-child{
     margin-top:15px;
+    margin-bottom: 0;
 }
 .signup_form_controller li input{
     border-radius: 6px;
