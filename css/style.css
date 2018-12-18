@@ -4891,7 +4891,11 @@ input[type="submit"]{
 }
 
 .day-intime-holder input.timepicker,
-.day-outtime-holder input.timepicker{
+.day-outtime-holder input.timepicker,
+.day-intime-holder input.clockpicker,
+.day-outtime-holder input.clockpicker,
+.day-intime-holder .clockpicker input,
+.day-outtime-holder .clockpicker input{
     padding: 7px !important;
     padding-right: 25px !important;
     border:1px solid #8d2fdf !important;
@@ -5160,6 +5164,13 @@ input[type="submit"]{
 .flex-center{
     display: flex;
     justify-content: center;
+}
+@media (min-width:320px) and (max-width:520px)
+{
+    .popover.clockpicker-popover:nth-child(2n+1){
+        right: 32px !important;
+        left: auto !important;
+    }
 }
 
 
