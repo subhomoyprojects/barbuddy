@@ -16,7 +16,7 @@
     background: linear-gradient(144deg,#521387,#8f2de2);
 }
 .logo_holder{
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .signup_form_holder{
     position: absolute;
@@ -64,7 +64,7 @@
     text-transform: capitalize;
 }
 .signup_form_controller li:last-child{
-    margin-top:40px;
+    margin-top:15px;
 }
 .signup_form_controller li input{
     border-radius: 6px;
@@ -128,7 +128,7 @@
     padding:2px 0;
 }
 .signup_tab .tab-content{
-    margin-top: 35px;
+    margin-top: 20px;
 }
 .signup_tab .nav-tabs .nav-item.show .nav-link, 
 .signup_tab  .nav-tabs .nav-link.active{
