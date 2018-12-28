@@ -5200,6 +5200,27 @@ input[type="submit"]{
     color: #4ee26a;
     text-decoration: underline;
 }
+/* 28/12/2018 */
+
+.custom_check_and_radio.terms-policy-holder input[type="checkbox"]:checked + label:after,
+.custom_check_and_radio.terms-policy-holder input[type="checkbox"]:not(:checked) + label:after {
+    background: none;
+    border-radius: 0;
+    content: "✔";
+    height: 18px;
+    left: 2px;
+    position: absolute;
+    top: 0px;
+    transition: all 0.2s ease 0s;
+    width: 18px;
+    font-size: 17px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    color: #7531b0;
+    font-weight: bold;
+}
+
+/* 28/12/2018 */
 
 
 /* After Development ========================================*/
