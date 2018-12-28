@@ -5219,6 +5219,9 @@ input[type="submit"]{
     color: #7531b0;
     font-weight: bold;
 }
+.err_class.double-error{
+    bottom: -30px
+}
 
 /* 28/12/2018 */
 
