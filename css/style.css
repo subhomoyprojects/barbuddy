@@ -4018,12 +4018,22 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.bb{
+/* .bb{
     width:52px;
     height: 52px;
     border-radius: 4px;
     background:#fff url(../images/sprite.png) no-repeat;
     background-position: -632px 8px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+} */
+.bb{
+    width:52px;
+    height: 52px;
+    border-radius: 4px;
+    background:url(../images/bb.png) no-repeat;
+    background-size: 100% 100%;
     display: inline-block;
     vertical-align: middle;
     margin-right: 15px;
