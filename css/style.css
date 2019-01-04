@@ -5226,6 +5226,62 @@ input[type="submit"]{
 
 /* 28/12/2018 */
 
+/*4-1-2019*/
+
+.open-hours-controller > span{
+    display: inline-block;
+    width: 40%;
+}
+.open-hours-controller > div{
+    width:60%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.open-hours-controller > div > span{
+    margin-right: 10px;
+    display: inline-block;
+    padding: 5px;
+}
+.open-hours-controller div > label.switch{
+    width:36px;
+    justify-content: flex-end;
+}
+.open-hours-controller div > label.switch span{
+    left: auto;
+}
+.open-all-day-hour-holder{
+    transition: all ease-in-out 0.3s;
+    display: flex;
+}
+.open-all-day-hour-holder > div{
+    display: flex;
+    width:100%;
+    align-items: center;
+}
+.open-all-day-hour-holder > div div{
+    width:33.33%;
+    margin-right: 15px;
+}
+.open-all-day-hour-holder > div div:last-child{
+    margin-right: 0;
+}
+.open-all-day-hour-holder > div div input{
+    border: 1px solid #8d2fdf !important;
+}
+.open-all-day-hour-holder .watch_icon::before, .open-all-day-hour-holder .watch_icon::before {
+    right: 5px !important;
+    top: 12px !important;
+}
+.open-all-day-hour-holder div input{
+    padding: 7px !important;
+}
+.open-all-day-hour-holder > div div{
+    font-size: 14px;
+    color: #686868; 
+}
+
+/*4-1-2019*/
+
 
 /* After Development ========================================*/
 

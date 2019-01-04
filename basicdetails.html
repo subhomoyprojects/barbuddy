@@ -78,9 +78,27 @@
                             <input placeholder="To" type="text" id="timepicker-two" name="timepicker-two" class="timepicker" required>
                             </div>
                         </li> -->
+                        <li class="no_border">
+                            <label class="mb-4 d-flex open-hours-controller">
+                                <span>Open Hours*</span> 
+                                <div class="d-flex common-day-time-controller">
+                                    <span>All Days</span>
+                                    <label class="switch open-all-day-hour mt-0">
+                                        <input type="checkbox" style="opacity:0;">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </label>
+                            <div class="open-all-day-hour-holder" style="display:none;">
+                                <div>
+                                    <div class="no_border">All 7 Days</div>
+                                    <div class="watch_icon"><input type="text" placeholder="From"></div>
+                                    <div class="watch_icon"><input type="text" placeholder="To"></div>
+                                </div>
+                            </div>
+                        </li>
                         <li>
-                            <label>Open Hours*</label>
-                            <div class="row">
+                            <div class="row mb-2">
                                 <div class="col-6 col-sm-6 col-md-6 col-lg-4 common-day-time-controller day-holder">
                                     <label>Sunday</label>
                                 </div>
@@ -99,7 +117,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="row">
+                            <div class="row  mb-2">
                                 <div class="col-6 col-sm-6 col-md-6 col-lg-4 common-day-time-controller day-holder">
                                     <label>Monday</label>
                                 </div>
@@ -118,7 +136,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="row">
+                            <div class="row mb-2">
                                 <div class="col-6 col-sm-6 col-md-6 col-lg-4 common-day-time-controller day-holder">
                                     <label>Tuesday</label>
                                 </div>
@@ -137,7 +155,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="row">
+                            <div class="row mb-2">
                                 <div class="col-6 col-sm-6 col-md-6 col-lg-4 common-day-time-controller day-holder">
                                     <label>Wednesday</label>
                                 </div>
@@ -156,7 +174,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="row">
+                            <div class="row mb-2">
                                 <div class="col-6 col-sm-6 col-md-6 col-lg-4 common-day-time-controller day-holder">
                                     <label>Thursday</label>
                                 </div>
@@ -175,7 +193,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="row">
+                            <div class="row mb-2">
                                 <div class="col-6 col-sm-6 col-md-6 col-lg-4 common-day-time-controller day-holder">
                                     <label>Friday</label>
                                 </div>
@@ -193,8 +211,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="row">
+                        <li class="no_border">
+                            <div class="row mb-2">
                                 <div class="col-6 col-sm-6 col-md-6 col-lg-4 common-day-time-controller day-holder">
                                     <label>Saturday</label>
                                 </div>
@@ -242,6 +260,14 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/wickedpicker.js"></script>
 <script src="js/base.js"></script>
+
+<script>
+    $("document").ready(function(){
+        $(".open-all-day-hour input").change(function(){
+            $(".open-all-day-hour-holder").toggle();
+        });
+    });
+</script>
 
 </body>
 </html>
