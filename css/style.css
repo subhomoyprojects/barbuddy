@@ -5251,9 +5251,12 @@ input[type="submit"]{
 }
 .open-all-day-hour-holder{
     transition: all ease-in-out 0.3s;
-    display: flex;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
-.open-all-day-hour-holder > div{
+.open-all-day-hour-holder > div:not(.save-time-button){
     display: flex;
     width:100%;
     align-items: center;
