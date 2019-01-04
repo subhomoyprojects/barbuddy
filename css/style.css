@@ -1456,11 +1456,9 @@
 .drink_food_details_form_holder li.no_border .quarter::after{
     top: auto;
 }
-.drink_food_details_form_holder li.no_border,
-.drink_food_details_form_holder li:last-child{
+.drink_food_details_form_holder li.no_border{
     border-bottom: none;
 }
-.drink_food_details_form_holder li:last-child::after,
 .drink_food_details_form_holder li.no_border::after{
     display: none;
 }
